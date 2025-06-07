@@ -40,3 +40,6 @@ li{
 .menu-Open{
     position: fixed;
 }
+::selection{
+    background: var(--background-color);
+}
