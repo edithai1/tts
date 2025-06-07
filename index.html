@@ -6,20 +6,30 @@
   <title>Edith AI</title>
   <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="src/index.css">
+  <link rel="stylesheet" href="src/media.css">
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
 
 </head>
-<body>
+<body oncontextmenu="return false" onkeydown="return event.keyCode != 123">
   <div class="container">
     <header class="w-full flex item jsb">
-      <div class="logo flex item gap-1"><img class="w50" src="src/img/logo.png" alt="Edith AI"><h1 id="h1">ai</h1></div>
+      <div class="logo flex item gap-1">
+        <img loading="lazy" class="w50" src="src/img/logo.png" alt="Edith AI"><h1 id="h1">ai</h1>
+      </div>
       <div class="nav">
+        <i class="fa fa-solid fa-close" id="closeBtn"></i>
         <ul>
           <li>get started</li>
-          <li>features</li>
+          <li id="dropdownFeature">features <i class="fa-sharp fa-solid fa-caret-down"></i>
+            <ul id="dropdown-optionsFeatures">
+              <li>text to speech </li>
+              <li>speech to text </li>
+              <li>image to text </li>
+            </ul>
+          </li>
           <li id="dropdown">resources <i class="fa-sharp fa-solid fa-caret-down"></i>
             <ul id="dropdown-options">
               <li>community forum</li>
@@ -31,6 +41,7 @@
         </ul>
       </div>
       <button type="button">join Edith AI</button>
+      <i class="fa fa-solid fa-bars" id="OpenBtn"></i>
     </header>
     <section class="w-ful flex item jsb" id="banner">
       .<div class="banner-text">
@@ -42,7 +53,7 @@
         </div>
       </div>
       <div class="banner-image">
-        <img src="src/img/image1.jpg" alt="Edith AI Banner Image">
+        <img loading="lazy" src="src/img/image1.jpg" alt="Edith AI Banner Image">
       </div>
     </section>
     <main class="w-ful">
@@ -52,19 +63,19 @@
         <p>Discover the powerful capablities of Edith AI that enchance productivity and accessibility. Our features are designed to make interaction with content seamless and intuitive.</p>
       </div>
       <section id="features">
-        <div class="w-ful flex item jsb">
-        .<div class="feature-box">
-            <img src="src/img/img1.avif" alt="Speech to Text">
+        <div class="w-ful flex item jsb" id="featureRow">
+        <div class="feature-box">
+            <img loading="lazy" src="src/img/img1.avif" alt="Speech to Text">
             <h2>Tranform Speech into Text Effortlessly</h2>
             <p>Our speech-to-Text feature convert spoken word into written text in real-time.</p>
           </div>
           <div class="feature-box">
-            <img src="src/img/img2.jpg" alt="Text to Speech">
+            <img loading="lazy" src="src/img/img2.jpg" alt="Text to Speech">
             <h2>Bring Your Text to Life</h2>
             <p>With Text-to-Speech, enjoy lifelike voice playback of your written content.</p>
           </div>
           <div class="feature-box">
-            <img src="src/img/img3.avif" alt="Image to Text">
+            <img loading="lazy" src="src/img/img3.avif" alt="Image to Text">
             <h2>Extract Text from Images Instantly</h2>
             <p>Our Image-to-Text features uses advanced OCR technology to retrive text from Images.</p>
           </div>
@@ -92,7 +103,7 @@
           </div>
         </div>
         <div class="banner-image">
-          <img src="src/img/img4.avif" alt="Edith AI Banner Image">
+          <img loading="lazy" src="src/img/img4.avif" alt="Edith AI Banner Image">
         </div>
       </section>
       <section id="features">
@@ -101,19 +112,19 @@
         </div>
         <div class="w-ful flex item jsb" id="action">
           <div class="actionBox">
-            <img src="src/img/img5.avif" alt="Speech to Text">
+            <img loading="lazy" src="src/img/img5.avif" alt="Speech to Text">
             <h2>Experience seamless integration of speech and image processing technology.</h2>
             <p>With just a few clicks, transform spoken word  into written text instanlty.</p>
             <button type="button">learn more <i class="fa fa-solid fa-arrow-right"></i></button>
           </div>
           <div class="actionBox">
-            <img src="src/img/img6.avif" alt="Text to Speech">
+            <img loading="lazy" src="src/img/img6.avif" alt="Text to Speech">
             <h2>Unlock the power of lifelike voice playback from your written  content.</h2>
             <p>Easily convert your text into natural-sounding  speech with our advanced technology.</p>
             <button>sign up <i class="fa fa-solid fa-arrow-right"></i></button>
           </div>
           <div class="actionBox">
-            <img src="src/img/img7.jpg" alt="Image to Text">
+            <img loading="lazy" src="src/img/img7.jpg" alt="Image to Text">
             <h2>Extract Text from Images effortlessly using our cutting-edge OCR Technology.</h2>
             <p>Turn images into editable text quickly and accurately with Edith AI.</p>
             <button type="button">get started <i class="fa fa-solid fa-arrow-right"></i></button>
@@ -139,14 +150,14 @@
             </div>
             <div class="userPosted w-ful flex item">
               <div class="details">
-                <img src="src/img/fudia.jpg" alt="" class="profile">
+                <img loading="lazy" src="src/img/fudia.jpg" alt="" class="profile">
                 <div>
                   <h3>Fudia Daramy</h3>
                   <p>student, University</p>
                 </div>
               </div>
               <div class="country">
-                <img src="src/img/slFlag.jpg" alt="" class="flag">
+                <img loading="lazy" src="src/img/slFlag.jpg" alt="" class="flag">
                 <h3>Sierra leone</h3>
               </div>
             </div>
@@ -166,22 +177,72 @@
             </div>
             <div class="userPosted w-ful flex item">
               <div class="details">
-                <img src="src/img/peter aa komba.jpg" alt="" class="profile">
+                <img loading="lazy" src="src/img/peter aa komba.jpg" alt="" class="profile">
                 <div>
                   <h3>Peter A. a. komba</h3>
                   <p>Content creator, Tiktok</p>
                 </div>
               </div>
               <div class="country">
-                <img src="src/img/nigeriaFlag.jpg" alt="" class="flag">
+                <img loading="lazy" src="src/img/nigeriaFlag.jpg" alt="" class="flag">
                 <h3>nigeria</h3>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <section class="w-ful flex item jsb free" >
+        <div class="banner-text">
+          <h2>Start Your Free Trial <br class="break"> Today</h2>
+          <p>Experience the power of Edith AI with a hassle-free trial. No Credit Card required.</p>
+          <div id="btn">
+            <button type="button">Signup</button>
+            <button type="button">learn More</button>
+          </div>
+        </div>
+        <div class="banner-image">
+          <img loading="lazy" src="src/img/image1.jpg" alt="Edith AI Banner Image">
+        </div>
+      </section>
+      <section class="w-ful flex  jsb free" id="cta">
+        <div class="banner-text" id="ctaText">
+          <div class="logo flex item gap-1">
+            <img loading="lazy" class="w50" src="src/img/logo.png" alt="Edith AI"><h1 id="h1">ai</h1>
+          </div>
+          <h2>Empowering communication through innovative technology</h2>
+          <p>Transform the way you interact with speech and images effortlessly.</p>
+          <div id="btn">
+            <button type="button">Learn more</button>
+            <button type="button">sign up</button>
+          </div>
+        </div>
+        <div class="banner-image w-ful flex " id="ctaBox">
+          <div class="rowBoxGrid">
+            <a href="">about us</a>
+            <a href="">contact us</a>
+            <a href="">help center</a>
+            <a href="">blog posts</a>
+            <a href="">user guide</a>
+          </div>
+          <div class="rowBoxGrid">
+            <a href="">FAQ section</a>
+            <a href="">feedBack form</a>
+            <a href="">careers page</a>
+            <a href="">support team</a>
+            <a href="">community forum</a>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="w-ful flex item jsb">
+      <p>&copy; 2025 Edith AI. All right reserved.</p>
+      <div class="rowBoxGrid">
+        <a href="">privacy policy</a>
+        <a href="">terms of service</a>
+        <a href="">cookies settings</a>
+      </div>
+    </footer>
   </div>
-  <script src="src/app.js"></script>
+  <script src="src/app.2805641173702365.js"></script>
 </body>
 </html>

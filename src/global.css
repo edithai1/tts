@@ -28,3 +28,15 @@ li{
 .jcc{
     justify-content: center;
 }
+:is(#closeBtn, #OpenBtn){
+    display: none;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+#OpenBtn{
+    margin-top: 20px;
+}
+.menu-Open{
+    position: fixed;
+}

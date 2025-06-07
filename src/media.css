@@ -1,0 +1,103 @@
+@media (max-width: 999px) {
+    :is(#banner, #banner2){
+        flex-direction: column;
+    }
+    .banner-text{
+        margin-bottom: 20px;
+    }
+    :is(.banner-image, .banner-text){
+        width: 100%;
+    }
+    .titleBox{
+        width: 80%;
+    }
+    :is(#featureRow, .free){
+    flex-direction: column;
+   }
+   :is(.less, .feature-box, #ctaText, #ctaBox, footer .rowBoxGrid){
+    width: 100%;
+   }
+   .banner-text h2{
+    font-size: 30px;
+   }
+   .free h2{
+    margin: 10px 0;
+   }
+   .free h2 .break{
+    display: none;
+   }
+   #ctaBox{
+    justify-content: space-around;
+   }
+   footer{
+    flex-direction: column-reverse;
+   }
+   .colRow{
+    box-shadow: 0 7px 20px var(--text-color);
+    border-radius: 10px;
+   }
+   :is(#action, .col){
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+}
+@media (max-width: 690px) {
+    header button{
+        display: none;
+    }
+    :is(#closeBtn, #OpenBtn){
+        display: block;
+    }
+    .nav{
+        position: fixed;
+        background: var(--background-color);
+        right: -100%;
+        bottom: 0;
+        top: 0;
+        width: 50%;
+        padding: 5% 3%;
+        box-shadow: 0 7px 7px 6px var(--text-color);
+        transition: 2s;
+    }
+    .nav ul li{
+        float: none;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+    .nav ul li:hover{
+        color: var(--dodger-blue);
+    }
+    .nav ul li ul{
+        /* display: block; */
+        position: relative;
+    }
+    .open{
+        right: 0;
+    }
+    footer .rowBoxGrid{
+        margin: 0;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
+    footer .rowBoxGrid a{
+        margin: 5px 0;
+    }
+    .titleBox{
+        width: 100%;
+    }
+    :is(.titleBox h1, .banner-text.less h2){
+        font-size: 20px;
+    }
+    :is(.testimonies, .free){
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    :is(#cta, .free){
+        margin-top: 30px;
+    }
+}
+@media (max-width: 520px) {
+    .container{
+        display: none;
+    }
+}
