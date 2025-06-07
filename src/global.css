@@ -1,0 +1,30 @@
+:root{
+    --primary-color: #4a90e2;
+    --secondary-color: #50e3c2;
+    --background-color: #f5f7fa;
+    --text-color: #333333;
+    --border-color: #e0e0e0;
+    --dodger-blue: #1e90ff;
+    --light-gray: #f0f0f0;
+}
+.flex{
+    display: flex;
+}
+.item{
+    align-items: center;
+}
+.jsb{
+    justify-content: space-between;
+}
+.w-ful{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+.w50{
+    width: 70px;
+}
+.jcc{
+    justify-content: center;
+}

@@ -3,9 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Edith AI</title>
+  <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="src/index.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
 </head>
 <body>
-  <h1>Hello Wor</h1>
+  <div class="container">
+    <header class="w-full flex item jsb">
+      <div class="logo flex item gap-1"><img class="w50" src="src/img/logo.png" alt="Edith AI"><h1 id="h1">ai</h1></div>
+      <div class="nav">
+        <ul>
+          <li>get started</li>
+          <li>features</li>
+          <li id="dropdown">resources <i class="fa-sharp fa-solid fa-caret-down"></i>
+            <ul id="dropdown-options">
+              <li>community forum</li>
+              <li>support team</li>
+              <li>blog posts</li>
+              <li>documentation</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <button type="button">join Edith AI</button>
+    </header>
+    <section class="w-ful flex item jsb" id="banner">
+      .<div class="banner-text">
+        <h2>Transform Your Ideas <br> with Edith AI</h2>
+        <p>Edith AI seamlessly integrates speech and image processing to enchance your productivity. Experience real-time speech-to-text, lifelike text-to-speech, and powerful image-to-text capabilities all in one platform.</p>
+        <div id="btn">
+          <button type="button">Explore</button>
+          <button type="button">learn More</button>
+        </div>
+      </div>
+      <div class="banner-image">
+        <img src="src/img/image1.jpg" alt="Edith AI Banner Image">
+      </div>
+    </section>
+    <main class="w-ful">
+      <div class="titleBox">
+        <h3>features</h3>
+        <h1>explore our innovative features</h1>
+        <p>Discover the powerful capablities of Edith AI that enchance productivity and accessibility. Our features are designed to make interaction with content seamless and intuitive.</p>
+      </div>
+      <section id="features">
+        <div class="w-ful flex item jsb">
+        .<div class="feature-box">
+            <img src="src/img/img1.avif" alt="Speech to Text">
+            <h2>Tranform Speech into Text Effortlessly</h2>
+            <p>Our speech-to-Text feature convert spoken word into written text in real-time.</p>
+          </div>
+          <div class="feature-box">
+            <img src="src/img/img2.jpg" alt="Text to Speech">
+            <h2>Bring Your Text to Life</h2>
+            <p>With Text-to-Speech, enjoy lifelike voice playback of your written content.</p>
+          </div>
+          <div class="feature-box">
+            <img src="src/img/img3.avif" alt="Image to Text">
+            <h2>Extract Text from Images Instantly</h2>
+            <p>Our Image-to-Text features uses advanced OCR technology to retrive text from Images.</p>
+          </div>
+        </div>
+        <div id="btn" class="w-ful flex item jcc">
+          <button type="button">learn more</button>
+          <button type="button">sign up <i class="fa fa-solid fa-arrow-right"></i></button>
+        </div>
+      </section>
+      <section class="w-ful flex item jsb" id="banner2">
+        <div class="banner-text less">
+          <h2>Unlock Your Potential with Edith <br> AI: Enchance and Productivity and Creativity</h2>
+          <p>Edith AI empowers users by streamlining tasks and fostering creativity. Experience seamless accessibility and innovative solutions taliored to your needs.</p>
+          <div class="w-ful flex item jsb" id="boost">
+            <div class="box">
+              <i class="fas fa-solid fa-user-check"></i>
+              <h3>boost productivity</h3>
+              <p>Transform your workflow with real-time speech and text processing capabilities.</p>
+            </div>
+            <div class="box">
+              <i class="fas fa-solid fa-wheelchair"></i>
+              <h3>enchance accessibility</h3>
+              <p>Make content accessible for everyone, including those with visual impairments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="banner-image">
+          <img src="src/img/img4.avif" alt="Edith AI Banner Image">
+        </div>
+      </section>
+      <section id="features">
+        <div class=" less">
+          <h1>Discover the effortless way to convert speech and text with Edith AI.</h1>
+        </div>
+        <div class="w-ful flex item jsb" id="action">
+          <div class="actionBox">
+            <img src="src/img/img5.avif" alt="Speech to Text">
+            <h2>Experience seamless integration of speech and image processing technology.</h2>
+            <p>With just a few clicks, transform spoken word  into written text instanlty.</p>
+            <button type="button">learn more <i class="fa fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="actionBox">
+            <img src="src/img/img6.avif" alt="Text to Speech">
+            <h2>Unlock the power of lifelike voice playback from your written  content.</h2>
+            <p>Easily convert your text into natural-sounding  speech with our advanced technology.</p>
+            <button>sign up <i class="fa fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="actionBox">
+            <img src="src/img/img7.jpg" alt="Image to Text">
+            <h2>Extract Text from Images effortlessly using our cutting-edge OCR Technology.</h2>
+            <p>Turn images into editable text quickly and accurately with Edith AI.</p>
+            <button type="button">get started <i class="fa fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="src/app.js"></script>
 </body>
 </html>
