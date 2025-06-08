@@ -60,8 +60,9 @@
         justify-content: left;
         align-items: unset;
     }
-}
-@media (max-width: 690px) {
+    .actionBox{
+        height: unset;
+    }
     header button{
         display: none;
     }
