@@ -14,7 +14,7 @@
     :is(#featureRow, .free){
     flex-direction: column;
    }
-   :is(.less, .feature-box, #ctaText, #ctaBox, footer .rowBoxGrid){
+   :is(.less, .feature-box, #ctaText, #ctaBox, footer .rowBoxGrid, .rowBoxGrid){
     width: 100%;
    }
    .banner-text h2{
@@ -60,7 +60,7 @@
         justify-content: left;
         align-items: unset;
     }
-    .actionBox{
+    :is(.feature-box, .actionBox){
         height: unset;
     }
     header button{
@@ -89,7 +89,6 @@
         color: var(--dodger-blue);
     }
     .nav ul li ul{
-        /* display: block; */
         position: relative;
     }
     .open{
@@ -101,8 +100,9 @@
         display: flex;
         text-align: center;
     }
-    footer .rowBoxGrid a{
+    :is(footer .rowBoxGrid a, .rowBoxGrid a){
         margin: 5px 0;
+        font-size: 13px;
     }
     .titleBox{
         width: 100%;
