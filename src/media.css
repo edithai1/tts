@@ -20,6 +20,10 @@
    .banner-text h2{
     font-size: 30px;
    }
+   .free{
+    padding-left: 0;
+    font-size: 13px;
+   }
    .free h2{
     margin: 10px 0;
    }
@@ -38,6 +42,9 @@
    }
    :is(#action, .col){
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    section{
+        margin: 20px 0;
     }
 }
 @media (max-width: 690px) {

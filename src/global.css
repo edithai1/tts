@@ -43,3 +43,10 @@ li{
 ::selection{
     background: var(--background-color);
 }
+img{
+    width: 100%;
+    object-fit: cover;
+}
+body{
+    overflow-x: hidden;
+}
