@@ -1,11 +1,11 @@
 @media (max-width: 999px) {
-    :is(#banner, #banner2){
+    :is(#banner, #banner2, .userPosted){
         flex-direction: column;
     }
     .banner-text{
         margin-bottom: 20px;
     }
-    :is(.banner-image, .banner-text, .actionBox, .actionBox img){
+    :is(.banner-image, .banner-text, .actionBox img, .box){
         width: 100%;
     }
     .titleBox{
@@ -37,15 +37,28 @@
     flex-direction: column-reverse;
    }
    .colRow{
-    box-shadow: 0 7px 20px var(--text-color);
-    border-radius: 10px;
     padding: 0;
    }
-   :is(#action, .col){
+   :is(#action, .col, #boost){
+        display: grid;
+        gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
     section{
         margin: 20px 0;
+    }
+    #btn{
+        margin: 20px 0;
+    }
+    .colRow{
+        margin-bottom: 20px;
+        box-shadow: 0 7px 20px var(--primary-color);
+        padding: 2%;
+        border-radius: 10px;
+    }
+    :is(.details, .country, .userPosted){
+        justify-content: left;
+        align-items: unset;
     }
 }
 @media (max-width: 690px) {
@@ -61,7 +74,7 @@
         right: -100%;
         bottom: 0;
         top: 0;
-        width: 50%;
+        width: 90%;
         padding: 5% 3%;
         box-shadow: 0 7px 7px 6px var(--text-color);
         transition: 2s;
