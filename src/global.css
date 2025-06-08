@@ -50,3 +50,6 @@ img{
 body{
     overflow-x: hidden;
 }
+.mobile{
+    display: none;
+}
