@@ -5,7 +5,7 @@
     .banner-text{
         margin-bottom: 20px;
     }
-    :is(.banner-image, .banner-text){
+    :is(.banner-image, .banner-text, .actionBox, .actionBox img){
         width: 100%;
     }
     .titleBox{
@@ -39,9 +39,10 @@
    .colRow{
     box-shadow: 0 7px 20px var(--text-color);
     border-radius: 10px;
+    padding: 0;
    }
    :is(#action, .col){
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
     section{
         margin: 20px 0;
