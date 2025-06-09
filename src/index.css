@@ -61,7 +61,8 @@ header{
     padding: 8% 2% 2% 2%;
 }
 .banner-text{
-    width: 50%;
+    width: 48%;
+    margin-right: 2%;
 }
 .banner-image{ 
  width: 50%;
@@ -321,4 +322,28 @@ footer p{
 }
 footer .rowBoxGrid a{
     display: inline-block;
+}
+/* About Page */
+.team img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.team .feature-box{
+    place-items: center;
+    height: fit-content;
+    padding: 1% 0;
+    margin: 2%;
+    width: 100%;
+}
+.team #featureRow{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.team .icon i{
+    font-size: 30px;
+    margin: 10px 15px;
+    cursor: pointer;
 }
