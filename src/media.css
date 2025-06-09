@@ -120,6 +120,9 @@
     :is(#cta, .free){
         margin-top: 30px;
     }
+    .team #featureRow{
+        grid-template-columns: 1fr;
+    }
 }
 @media (max-width: 299px) {
     .container{
